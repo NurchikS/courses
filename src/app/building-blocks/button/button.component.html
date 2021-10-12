@@ -1,0 +1,2 @@
+<button *ngIf="icon != null; else elseBlock"><fa-icon [icon]="icon"></fa-icon></button>
+<ng-template #elseBlock><button>{{ text }}</button></ng-template>

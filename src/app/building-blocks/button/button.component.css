@@ -1,0 +1,18 @@
+button {
+    border: 2px blueviolet solid;
+    background: transparent;
+    width: fit-content;
+}
+
+button:hover{
+    width: 4vw;
+    height: 4vh;
+}
+
+button:focus{
+    border: 2px black solid;
+}
+
+button:active{
+    border: 2px red solid;
+}

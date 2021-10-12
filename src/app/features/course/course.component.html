@@ -1,0 +1,20 @@
+<div class="main border border-primary w-75 p-3 h-25 d-inline-block">
+    <div class="float-start">
+        <h1> {{ course.title }}</h1>
+        <p>{{ course.description }}</p>
+    </div>
+    <div class="float-end">
+        <p>Authors: {{ course.authors }}</p>
+        <p>Duration: {{ course.duration | duration }}</p>
+        <p>Created: {{ course.creationDate | date : 'dd.MM.YYYY' }}</p>
+              <app-button
+                [text]="buttonText">
+              </app-button>
+              <app-button *ngIf="course.isEditable"
+                [icon]="iconTrash">
+              </app-button>
+              <app-button *ngIf="course.isEditable"
+                [icon]="iconEdit">
+              </app-button>
+    </div>
+</div>
