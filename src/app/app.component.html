@@ -4,12 +4,12 @@
   </head>
   <body>
     <app-header></app-header>
-    <div *ngIf="courses.length > 0; else elseBlock">
+    <div *ngIf="courses.length > 0; else elsePart">
       <app-courses 
           [courses]="courses">
       </app-courses>
     </div>
-    <ng-template #elseBlock>
+    <ng-template #elsePart>
       <app-info></app-info>
     </ng-template>
   </body>
